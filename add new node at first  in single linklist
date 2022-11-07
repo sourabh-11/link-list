@@ -1,0 +1,10 @@
+void add_at_start(struct node *head, int data)
+{
+	
+	struct node *ptr =malloc(sizeof(struct node));
+	ptr->data=data;
+	temp->link = NULL;
+	ptr->link = head;
+	head=ptr
+	return ;
+}
