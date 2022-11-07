@@ -1,0 +1,13 @@
+void insertAfter(struct Node* prev_node,int data)
+{
+	if(prev_node==NULL)
+	{
+		printf("the given previous node can not be null");
+		return;
+	}
+	struct Node* new_node = (struct *Node)malloc(sizeof(struct Node))
+	
+	new_node->data = new_node;
+	new_node->next = prev_node->next;
+	prev_node->next= new_node;
+}
