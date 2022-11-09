@@ -1,0 +1,17 @@
+struct node* del_first(struct node *head)
+{
+	if(head == NULL)
+	{
+		printf("list is already empty")
+	}
+	else 
+	{
+		struct node *temp = head;
+		haed = head->link;
+		free(temp);
+		temp = NULL;
+	}
+	return head;
+	
+	
+}
