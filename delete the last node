@@ -1,0 +1,28 @@
+struct node* del_last(struct node *head)
+{
+	if(head == NULL)
+	{
+		printf("list is already empty")
+	}
+	else if(head->link  ==NULL)
+	{ 
+	free(head);
+	head = NULL;
+	}
+	else
+	{
+           		struct node *temp = head;
+	         	struct node *temp2 = head;	
+				 while(temp->link! =NULL)
+				 {
+				 	temp2 =temp;
+				 	temp= temp->link;
+					 }
+		  temp->link =NULl;
+		  free(temp);
+		  temp=NULL;	
+	}
+	return head;
+	
+	
+}
